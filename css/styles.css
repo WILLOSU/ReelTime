@@ -1,0 +1,624 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Navbar */
+.navbar-brand {
+  position: relative;
+}
+
+
+#logo {
+  width: 50px;
+}
+
+/* ////// TÍTULO */
+#reeltime-title { 
+  
+  color: #FFF;
+  position: absolute;
+  bottom: 8px;
+  font-size: 30px;
+  left: 55px;
+  font-weight: bold;
+}
+
+/* retângulo inicial */
+#main-navbar {
+  background-color: #4A4A4A;
+}
+
+/* Barra de pesquisa */
+#search-form {
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 180px;
+}
+
+/* removendo */
+#search-form .form-control {
+  border: none;
+  width: 90%;
+  box-shadow: none;
+  text-align: justify;
+}
+
+
+#navbar {
+  min-width: 30%;
+}
+
+/* entrar / cadastrar para a direita*/
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* deixar o link branco*/
+.navbar-nav .nav-item .nav-link {
+  color: #FFF;
+  transition: .5s;
+}
+
+/* quando passar o mouse ficará cinza*/
+.navbar-nav .nav-item .nav-link:hover {
+  color: #999;
+}
+
+/* utilizar ao longo do projeto*/
+.bold {
+  font-weight: bold;
+}
+
+/* onde aparece a mensagem, erro, sucesso, alert*/
+.msg-container {
+  background-color: #252525;
+  padding: 15px;
+}
+
+/* tamanho do retangulo */
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #252525;
+  text-align: center;
+}
+
+/* mensagem de erro */
+.msg.error {
+  color: #842029;
+  background-color: #F8D7DA;
+  border-color: #F5C2C7;
+}
+
+/* mensagem de sucesso */
+.msg.success {
+  color: #0F5132;
+  background-color: #D1E7DD;
+  border-color: #BADBCC;
+}
+
+/* ////// HOME */
+#main-container {
+  background-color: #252525;
+  color: #FFF;
+  min-height: 65vh; /* + ou - 65% da tela*/
+  padding: 40px;
+}
+
+
+/* seção dos cards de filmes*/
+.section-title {
+  font-size: 24px;
+  border-left: 4px solid #F5C518;
+  padding-left: 12px;
+  margin-top: 20px;
+}
+
+.section-description {
+  color: #CCC;
+  font-size: 18px;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.movie-card {
+  background-color: #1A1A1A;
+  width: 18%;
+  margin-bottom: 30px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.movie-card .card-img-top {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  height: 3rem;
+}
+
+.card-title a {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.fas.fa-star {
+  color: #F5C518;
+}
+
+.rating {
+  color: #CCC;
+}
+
+/*botão de avaliação*/
+.rate-btn {
+  margin-bottom: 15px;
+  color: #5799EF;
+  background-color: #333;
+  border-color: #333;
+  width: 100%;
+  font-weight: bold;
+}
+
+.rate-btn:hover {
+  background-color: #444;
+  border-color: #444;
+}
+
+/* se tiver lista vazia de filmes*/
+
+.empty-list {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* ////// LOGIN / REGISTER */
+
+/* regra do flasbosh onde duas bosh ficam entre espaçamento iguais e deixando centralizado*/
+#auth-row {
+  justify-content: space-evenly;
+}
+
+/* títulos da página*/
+#login-container h2,
+#register-container h2 {
+  text-align: center;
+  border-bottom: 2px solid #F5C518;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* estilizando os forms*/
+#login-container form,
+#register-container form {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+/* estilizando o botão*/
+.card-btn {
+  color: #000;
+  background-color: #F5C518;
+  border: 2px solid #F5C518;
+  width: 100%;
+}
+
+/* efeitos do botao, quando se passa o mouse em cima do elemento*/
+.card-btn:hover {
+  background-color: transparent;
+  color: #F5C518;
+  border-color: #F5C518;
+}
+
+/* ////// EDIT PROFILE */
+/* comporta a imagem*/
+#profile-image-container,
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #F5C518;
+  border-radius: 100%; /* deixando redonda*/
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto;
+}
+
+
+.profile-image-container {
+  width: 70px;
+  height: 70px;
+}
+
+.page-description {
+  color: #999;
+}
+
+/* largura descrição do usuario*/
+#bio {
+  max-width: 400px;
+}
+
+/* email mais escuro, desabilitado*/
+.form-control.disabled {
+  background-color: #BBB;
+}
+
+/*espaçamento, delimitar oque um formulário e o que é outro*/
+#change-password-container {
+  margin-top: 30px;
+}
+
+/* deixando a largura automática*/
+.edit-profile-page .card-btn,
+#add-movie-container .card-btn, /* usando no dashborad*/
+#review-form .card-btn,
+#edit-movie-form .card-btn {
+  width: auto;
+}
+
+/* ////// PROFILE */
+.profile-container {
+  justify-content: center;
+}
+
+.profile-container .profile-image {
+  margin: 20px auto;
+}
+
+.about-title {
+  color: #CCC;
+}
+
+.profile-description {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.added-movies-container,
+.about-container {
+  padding-top: 20px;
+}
+/**/
+.about-container {
+  text-align: center;
+  background-color: #333;
+  border-bottom: 3px solid #CCC;
+}
+
+.added-movies-container {
+  background-color: #333;
+}
+
+.added-movies-container .movies-container {
+  padding: 20px;
+}
+
+.added-movies-container .movie-card {
+  width: 31%;
+}
+
+/* ////// NEW MOVIE */
+/* adicionando filmes*/
+.new-movie-container {
+  text-align: center;
+}
+
+#add-movie-form {
+  text-align: left;
+}
+
+.movie-image-container {
+  height: 400px;
+  min-width: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* titulo Adicionar filme com borda, usando pseudo elemento*/
+.page-title:after {
+  content: "";
+  width: 300px;
+  border-bottom: 2px solid #F5C518;
+  display: block;
+  margin: 0 auto;
+  padding-top: 7px;
+}
+
+/* ////// MOVIE */
+.movie-container {
+  text-align: justify;
+}
+
+.movie-details {
+  margin: 25px 0;
+}
+
+.pipe {
+  border: 1px solid #333;
+  margin: 0 10px;
+}
+
+#reviews-title {
+  margin-bottom: 25px;
+}
+
+#review-form-container {
+  background-color: #333;
+  padding: 20px;
+}
+
+#review-form-container select,
+#review-form-container textarea {
+  width: 50%; /*largura*/
+}
+
+#reviews-container {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 4px solid #F5C518;
+}
+
+.review {
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.author-details-container {
+  padding-top: 20px;
+}
+
+.author-name a {
+  color: #F5C518;
+}
+
+.comment-title {
+  color: #999;
+}
+
+/* ////// DASHBOARD */
+#add-movie-container {
+  text-align: right;
+}
+
+/* texto branco*/
+#movies-dashboard .table {
+  color: #FFF;
+}
+
+/* não tem borda no texto*/
+#movies-dashboard .table th {
+  border-top: none;
+}
+
+#movies-dashboard .table tr {
+  padding: 15px 0;
+}
+
+.table-movie-title {
+  color: #FFF;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.table-movie-title:hover {
+  color: #F5C518;
+}
+
+/* estilizando botões*/
+.actions-column {
+  max-width: 75px;
+  text-align: center;
+}
+
+.actions-column form {
+  display: inline-block;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: bold;
+  transition: .5s;
+  border: none;
+}
+
+.edit-btn {
+  background-color: #0DCAF0;
+  color: #FFF;
+}
+
+.edit-btn:hover {
+  background-color: transparent;
+  color: #0DCAF0;
+  text-decoration: none;
+}
+
+.delete-btn {
+  background-color: #DC3545;
+  color: #FFF;
+}
+
+.delete-btn:hover {
+  background-color: transparent;
+  color: #DC3545;
+  text-decoration: none;
+}
+
+/* //////SEARCH */
+
+/* barra de pesquisa de filmes*/
+#search-title {
+  font-size: 40px;
+}
+
+#search-result,
+.back-link {
+  color: #F5C518;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #4a4a4a;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#social-container ul,
+#footer-links-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#social-container li,
+#footer-links-container li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#social-container li {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  transition: .5s;
+  line-height: 3;
+}
+
+/* passa o mouse fica cinza nos icones*/
+#social-container li:hover {
+  background-color: #333;
+}
+
+/* estilizando os icones para cor branca*/
+#social-container a,
+#footer-links-container a {
+  color: #FFF;
+  transition: .5s;
+}
+
+/*aumentando o tamanho dos icones*/
+#social-container li i {
+  font-size: 25px;
+}
+
+/*afastando icones um dos outros*/
+#footer-links-container {
+  margin: 30px 0;
+}
+
+/* Responsivo */
+@media(max-width: 450px) { /**/
+
+  #main-container {
+    padding: 20px;
+  }
+
+  /* Home */
+  #search-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #search-form .form-control {
+    width: 85%;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .movies-container {
+    padding: 0 15px;
+  }
+
+  .movie-card {
+    width: 100%;
+  }
+
+  .movie-details { /* detalhes do filmes em colunas*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movie-details span {
+    padding-bottom: 8px;
+  }
+
+  .pipe {
+    display: none;
+  }
+
+  .movie-container iframe { /* para nao quebrar videos do youtube*/
+    max-width: 100% !important;
+  }
+
+  #reviews-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #review-form-container select,
+  #review-form-container textarea {
+    width: 100%;
+  }
+
+  .empty-list {
+    margin-top: 20px;
+  }
+
+  .msg {
+    width: 100%;
+  }
+
+  /* Movie */
+  .review {
+    padding: 0 15px;
+  }
+
+  /* Dashboard */
+  #movies-dashboard {
+    padding: 0;
+  }
+
+  .actions-column {
+    width: 140px;
+  }
+
+  .edit-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Edit movie */
+  .movie-image-container {
+    margin-top: 1rem;
+  }
+
+  .fas.fa-bars {
+    color: #F5C518;
+  }
+
+}

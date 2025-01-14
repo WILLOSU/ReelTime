@@ -1,0 +1,13 @@
+{
+    "json.schemas": [
+        
+    ],
+    "files.associations": {
+        "**/templates/*.php": "php",
+        "**/templates/*.phtml": "php"
+    },
+    "emmet.includeLanguages": {
+        "php": "html"
+    }
+}
+
